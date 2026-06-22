@@ -1,3 +1,35 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+// Targets Obsidian-style alt tags like ![[image.png|center]]
+img[alt*="center"] {
+    display: block;
+    margin: 0 auto;
+}
+.page-title {
+    a {
+        font-size: 0 !important;
+        color: transparent !important;
+
+        display: block;
+
+        width: 200px;
+        height: 100px;
+
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+html[saved-theme="dark"] .page-title a {
+    background-image: url("/static/temali-dark.svg");
+}
+
+html[saved-theme="light"] .page-title a {
+    background-image: url("/static/temali-light.svg");
+}
