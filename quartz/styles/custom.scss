@@ -28,8 +28,8 @@ img[alt*="center"] {
     @media (max-width: 600px) {
         width: 120px;   // Shrink width for mobile
         height: 60px;   // Shrink height for mobile
+    }
 }
-
 html[saved-theme="dark"] .page-title a {
     background-image: url("/static/temali-dark.svg");
 }
