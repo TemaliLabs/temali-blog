@@ -87,5 +87,11 @@
     "tsx": "^4.22.4",
     "typescript": "^6.0.3",
     "wrangler": "^4.103.0"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "esbuild@0.28.2": true,
+    "esbuild@0.28.1": true,
+    "workerd@1.20261001.1": true
   }
 }
